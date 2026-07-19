@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HorrorForge — US audience লক্ষ্য করে হরর YouTube চ্যানেল পরিকল্পনা, আয় হিসাব ও ফ্রি AI টুলকিট।">
+  <meta name="theme-color" content="#09090b">
+  <title>HorrorForge — YouTube Creator OS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="HorrorForge home">
+      <span class="brand-mark">HF</span>
+      <span>HORROR<span>FORGE</span></span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#income">আয়</a><a href="#blueprint">ব্লুপ্রিন্ট</a><a href="#tools">AI টুলস</a><a href="#ideas">আইডিয়া</a><a href="#pipeline">পাইপলাইন</a>
+    </nav>
+    <a class="mini-cta" href="#roadmap">৩০ দিনের প্ল্যান <span>↗</span></a>
+    <button class="menu-button" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span></span> US AUDIENCE • FACELESS HORROR</div>
+        <h1>ভয়কে গল্পে বদলাও।<br><em>গল্পকে আয়ে।</em></h1>
+        <p>US দর্শকের জন্য original, advertiser-friendly horror storytelling channel বানানোর research, workflow ও calculator—এক জায়গায়।</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#blueprint">চ্যানেল শুরু করুন <span>→</span></a>
+          <a class="button ghost" href="#income">আয় হিসাব করুন</a>
+        </div>
+        <div class="trust-row">
+          <span><b>100%</b> browser-based</span><span><b>$0</b> starter stack</span><span><b>Original</b> first</span>
+        </div>
+      </div>
+      <div class="hero-visual reveal delay-1" aria-label="Horror channel dashboard preview">
+        <div class="moon"></div>
+        <div class="signal-card">
+          <div class="signal-head"><span>CHANNEL SIGNAL</span><i>LIVE</i></div>
+          <div class="signal-score"><strong>82</strong><span>/100<br>launch ready</span></div>
+          <div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="signal-stats"><span>NICHE<b>Dark history</b></span><span>FORMAT<b>12–18 min</b></span></div>
+        </div>
+        <p class="vertical-note">DON'T JUST SCARE — TELL A STORY</p>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Recommended formats">
+      <div>ORIGINAL FICTION <b>✦</b> DARK HISTORY <b>✦</b> UNSOLVED MYSTERY <b>✦</b> PARANORMAL FILES <b>✦</b> ANALOG HORROR <b>✦</b> ORIGINAL FICTION <b>✦</b></div>
+    </section>
+
+    <section id="income" class="section-shell content-section">
+      <div class="section-heading reveal">
+        <div><span class="chapter">01 / REVENUE</span><h2>আয়ের বাস্তব হিসাব</h2></div>
+        <p>RPM মানে প্রতি ১,০০০ total views-এ আপনার হাতে আসা আনুমানিক revenue। এটি fixed rate নয়।</p>
+      </div>
+      <div class="calculator-grid reveal">
+        <div class="calculator-panel">
+          <label for="views">মাসিক ভিউ <output id="viewsOutput">1,000,000</output></label>
+          <input id="views" type="range" min="10000" max="5000000" step="10000" value="1000000">
+          <label for="rpm">Expected RPM <output id="rpmOutput">$4.00</output></label>
+          <input id="rpm" type="range" min="0.5" max="12" step="0.25" value="4">
+          <div class="preset-row" aria-label="RPM presets">
+            <button data-rpm="2">Conservative $2</button><button class="active" data-rpm="4">Likely $4</button><button data-rpm="7">Strong $7</button>
+          </div>
+          <div class="us-share">
+            <label for="usShare">US audience share <output id="usOutput">70%</output></label>
+            <input id="usShare" type="range" min="0" max="100" step="5" value="70">
+            <small>এটি tracking target; calculator-এ RPM আপনিই সেট করছেন।</small>
+          </div>
+        </div>
+        <div class="result-panel">
+          <span>ESTIMATED MONTHLY REVENUE</span>
+          <strong id="revenueOutput">$4,000</strong>
+          <p id="revenueRange">Planning range: $2,000–$7,000</p>
+          <div class="result-cards">
+            <div><span>প্রতি ১K views</span><b id="perThousand">$4.00</b></div>
+            <div><span>প্রতি ১M views</span><b id="perMillion">$4,000</b></div>
+          </div>
+          <small>Estimate, guarantee নয়। Season, viewer country, ad suitability, retention ও video length ফল বদলায়।</small>
+        </div>
+      </div>
+      <div class="reality-strip reveal">
+        <b>বাস্তব benchmark</b><span><strong>$2–$6</strong> US-heavy long-form horror planning range</span><span><strong>$30–$100</strong> 1M Shorts views-এর rough range</span><span><strong>8+ min</strong> mid-roll eligibility; বেশি ad ≠ ভালো retention</span>
+      </div>
+    </section>
+
+    <section id="blueprint" class="blueprint content-section">
+      <div class="section-shell">
+        <div class="section-heading reveal light">
+          <div><span class="chapter">02 / BLUEPRINT</span><h2>কোন হরর niche বানাবেন?</h2></div>
+          <p>শুধু “scary clips” নয়। একটি repeatable promise বেছে নিয়ে অন্তত ৩০টি ভিডিও পরীক্ষা করুন।</p>
+        </div>
+        <div class="niche-grid">
+          <article class="niche-card featured reveal"><span class="rank">BEST START</span><div class="card-icon">◉</div><h3>Dark History</h3><p>US-এর abandoned towns, forgotten disasters ও লোককথা—research-led documentary style।</p><ul><li>Higher advertiser safety</li><li>Search + suggested potential</li><li>12–20 minute format</li></ul><b class="fit">FIT 94%</b></article>
+          <article class="niche-card reveal delay-1"><span class="rank">LOW COST</span><div class="card-icon">⌁</div><h3>Original Horror Fiction</h3><p>নিজের লেখা cinematic first-person story; recurring universe ও signature narrator।</p><ul><li>Copyright-safe</li><li>Strong binge potential</li><li>AI visuals সহায়ক</li></ul><b class="fit">FIT 91%</b></article>
+          <article class="niche-card reveal delay-2"><span class="rank">HIGH CTR</span><div class="card-icon">△</div><h3>Unsolved Mystery</h3><p>Public records ও credible sources থেকে non-graphic, respectful explainers।</p><ul><li>Fact-check essential</li><li>Defamation risk control</li><li>Never exploit victims</li></ul><b class="fit">FIT 84%</b></article>
+          <article class="niche-card reveal"><span class="rank">CREATIVE</span><div class="card-icon">▧</div><h3>Analog Horror</h3><p>Fictional tapes, emergency broadcasts ও hidden clues দিয়ে episodic storytelling।</p><ul><li>Distinct visual identity</li><li>Community theories</li><li>More editing time</li></ul><b class="fit">FIT 86%</b></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell content-section workflow-section">
+      <div class="section-heading reveal">
+        <div><span class="chapter">03 / SYSTEM</span><h2>ভিডিও factory, spam নয়</h2></div>
+        <p>AI দিয়ে speed বাড়ান—কিন্তু research, taste, narration direction ও final edit আপনার হতে হবে।</p>
+      </div>
+      <div class="workflow reveal">
+        <div class="workflow-step"><span>01</span><div><b>DISCOVER</b><h3>Topic validation</h3><p>Google Trends, YouTube search ও Reddit communities থেকে pattern নিন; গল্প কপি নয়।</p></div></div>
+        <div class="workflow-step"><span>02</span><div><b>VERIFY</b><h3>Research pack</h3><p>কমপক্ষে ২টি reliable source, dates ও pronunciation notes সংগ্রহ করুন।</p></div></div>
+        <div class="workflow-step"><span>03</span><div><b>WRITE</b><h3>Human-led script</h3><p>Cold open → context → escalating reveals → payoff → next-video bridge।</p></div></div>
+        <div class="workflow-step"><span>04</span><div><b>PRODUCE</b><h3>Voice + visuals</h3><p>নিজের voice সেরা। Licensed stock, original graphics ও subtle sound design ব্যবহার করুন।</p></div></div>
+        <div class="workflow-step"><span>05</span><div><b>PACKAGE</b><h3>Title + thumbnail</h3><p>একটি curiosity gap; gore, fake claims ও unreadable thumbnail এড়িয়ে চলুন।</p></div></div>
+        <div class="workflow-step"><span>06</span><div><b>LEARN</b><h3>48-hour review</h3><p>CTR, first 30-sec retention, average view duration ও US geography track করুন।</p></div></div>
+      </div>
+    </section>
+
+    <section id="tools" class="tools-section content-section">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <div><span class="chapter">04 / TOOLKIT</span><h2>ফ্রি AI ও creator tools</h2></div>
+          <div class="tool-controls"><input id="toolSearch" type="search" placeholder="টুল খুঁজুন…" aria-label="Search tools"><button class="filter active" data-filter="all">সব</button><button class="filter" data-filter="research">রিসার্চ</button><button class="filter" data-filter="production">প্রোডাকশন</button><button class="filter" data-filter="growth">গ্রোথ</button></div>
+        </div>
+        <div id="toolGrid" class="tool-grid">
+          <a class="tool-card reveal" data-category="research" data-name="google trends trend research" href="https://trends.google.com/trends/" target="_blank" rel="noopener"><span class="tool-logo google">G</span><div><b>Google Trends</b><small>TOPIC RESEARCH • FREE</small><p>US filter দিয়ে demand ও seasonality দেখুন।</p></div><i>↗</i></a>
+          <a class="tool-card reveal" data-category="research" data-name="gemini script research" href="https://gemini.google.com/" target="_blank" rel="noopener"><span class="tool-logo gemini">✦</span><div><b>Google Gemini</b><small>IDEAS & OUTLINE • FREE TIER</small><p>Angle, outline ও research questions বানান; facts verify করুন।</p></div><i>↗</i></a>
+          <a class="tool-card reveal" data-category="production" data-name="audacity audio voice" href="https://www.audacityteam.org/" target="_blank" rel="noopener"><span class="tool-logo audacity">A</span><div><b>Audacity</b><small>AUDIO • OPEN SOURCE</small><p>Voice record, noise reduction ও loudness polish।</p></div><i>↗</i></a>
+          <a class="tool-card reveal" data-category="production" data-name="davinci resolve video editor" href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" rel="noopener"><span class="tool-logo resolve">D</span><div><b>DaVinci Resolve</b><small>VIDEO EDITOR • FREE</small><p>Professional edit, color, audio ও captions।</p></div><i>↗</i></a>
+          <a class="tool-card reveal" data-category="production" data-name="canva thumbnail design" href="https://www.canva.com/youtube/" target="_blank" rel="noopener"><span class="tool-logo canva">C</span><div><b>Canva</b><small>THUMBNAIL • FREE TIER</small><p>1280×720 thumbnail; 2–4 visual elements রাখুন।</p></div><i>↗</i></a>
+          <a class="tool-card reveal" data-category="production" data-name="pexels stock video" href="https://www.pexels.com/videos/" target="_blank" rel="noopener"><span class="tool-logo pexels">P</span><div><b>Pexels</b><small>STOCK VIDEO • FREE</small><p>লাইসেন্স যাচাই করে atmospheric B-roll নিন।</p></div><i>↗</i></a>
+          <a class="tool-card reveal" data-category="production" data-name="youtube audio library music sound effects" href="https://studio.youtube.com/" target="_blank" rel="noopener"><span class="tool-logo youtube">▶</span><div><b>YouTube Audio Library</b><small>MUSIC & SFX • FREE</small><p>লাইসেন্স/attribution column দেখে sound নিন।</p></div><i>↗</i></a>
+          <a class="tool-card reveal" data-category="growth" data-name="youtube studio analytics growth" href="https://studio.youtube.com/" target="_blank" rel="noopener"><span class="tool-logo studio">S</span><div><b>YouTube Studio</b><small>ANALYTICS • FREE</small><p>Reach, retention, geography ও revenue-এর source of truth।</p></div><i>↗</i></a>
+          <a class="tool-card reveal" data-category="growth" data-name="vidiq keyword seo" href="https://vidiq.com/" target="_blank" rel="noopener"><span class="tool-logo vidiq">V</span><div><b>vidIQ</b><small>IDEATION • FREE TIER</small><p>Keyword ideas সহায়ক; score-কে blindভাবে follow নয়।</p></div><i>↗</i></a>
+        </div>
+        <p id="emptyTools" class="empty-state" hidden>কোনো matching tool পাওয়া যায়নি।</p>
+      </div>
+    </section>
+
+    <section id="ideas" class="section-shell content-section idea-lab">
+      <div class="section-heading reveal">
+        <div><span class="chapter">05 / IDEA LAB</span><h2>এক ক্লিকে video seed</h2></div>
+        <p>এগুলো seed—publish করার আগে originality check, research ও US English rewrite করুন।</p>
+      </div>
+      <div class="idea-machine reveal">
+        <div class="idea-options">
+          <label>FORMAT<select id="ideaFormat"><option value="history">Dark History</option><option value="fiction">Original Fiction</option><option value="mystery">Unsolved Mystery</option><option value="analog">Analog Horror</option></select></label>
+          <label>TONE<select id="ideaTone"><option value="cinematic">Cinematic</option><option value="documentary">Documentary</option><option value="intimate">First-person</option></select></label>
+          <button id="generateIdea" class="button primary">নতুন আইডিয়া <span>↻</span></button>
+        </div>
+        <div class="idea-output">
+          <span>VIDEO CONCEPT</span><h3 id="ideaTitle">The American Town That Vanished From Every Map</h3><p id="ideaHook">In 1974, the road into Bellwether was closed overnight. The strange part? Official maps insist the town never existed.</p>
+          <div class="idea-meta"><span id="ideaLength">12–15 MIN</span><span id="ideaVisual">ARCHIVAL + MAPS</span><button id="copyIdea">COPY BRIEF</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pipeline" class="section-shell content-section pipeline-section">
+      <div class="section-heading reveal">
+        <div><span class="chapter">06 / AUTOMATION</span><h2>Content pipeline</h2></div>
+        <p>আইডিয়া থেকে publish—সব ভিডিও এক জায়গায় track করুন। Data শুধু আপনার browser-এ থাকে এবং CSV হিসেবে export করা যায়।</p>
+      </div>
+      <div class="title-lab reveal">
+        <div class="title-input-wrap">
+          <label for="titleInput">US ENGLISH TITLE CHECKER</label>
+          <div><input id="titleInput" maxlength="100" value="The American Town That Vanished From Every Map" placeholder="Type an English video title…"><button id="analyzeTitle">ANALYZE</button></div>
+        </div>
+        <div class="title-score"><strong id="titleScore">86</strong><span>/100<br><b id="titleVerdict">STRONG</b></span></div>
+        <ul id="titleChecks"><li class="pass">✓ Clear length: 48 characters</li><li class="pass">✓ Creates a curiosity gap</li><li class="pass">✓ Easy to scan—no clutter</li></ul>
+      </div>
+      <div class="pipeline-shell reveal">
+        <form id="videoForm" class="pipeline-form">
+          <label>VIDEO TITLE<input id="videoTitle" required maxlength="100" placeholder="e.g. The Tunnel Sealed for 83 Years"></label>
+          <label>STAGE<select id="videoStage"><option value="idea">Idea</option><option value="research">Research</option><option value="script">Script</option><option value="edit">Editing</option><option value="ready">Ready</option><option value="published">Published</option></select></label>
+          <label>PUBLISH DATE<input id="publishDate" type="date"></label>
+          <button class="button primary" type="submit">ADD VIDEO <span>+</span></button>
+        </form>
+        <div class="pipeline-toolbar"><span><b id="videoCount">0</b> VIDEOS IN PIPELINE</span><div><button id="loadSamples" type="button">LOAD SAMPLE</button><button id="exportCsv" type="button">EXPORT CSV ↓</button><button id="clearPipeline" type="button">CLEAR</button></div></div>
+        <div id="pipelineList" class="pipeline-list"></div>
+        <div id="pipelineEmpty" class="pipeline-empty"><b>YOUR PIPELINE IS EMPTY</b><span>প্রথম video যোগ করুন অথবা sample plan load করুন।</span></div>
+      </div>
+    </section>
+
+    <section id="roadmap" class="roadmap content-section">
+      <div class="section-shell">
+        <div class="section-heading reveal light">
+          <div><span class="chapter">07 / 30-DAY SPRINT</span><h2>ভাবনা নয়, publish করুন</h2></div><p>লক্ষ্য: ৪টি quality long-form + ৮টি derivative Shorts। প্রতিদিন box tick করুন—progress browser-এ save থাকবে।</p>
+        </div>
+        <div class="sprint-grid reveal">
+          <div class="week"><span>WEEK 01</span><h3>Position</h3><label><input type="checkbox" data-task="niche"> ১টি niche + channel promise</label><label><input type="checkbox" data-task="brand"> Name, banner, about section</label><label><input type="checkbox" data-task="ideas"> ৩০টি validated title seed</label></div>
+          <div class="week"><span>WEEK 02</span><h3>Build</h3><label><input type="checkbox" data-task="scripts"> প্রথম ২টি original script</label><label><input type="checkbox" data-task="templates"> Edit + thumbnail template</label><label><input type="checkbox" data-task="upload1"> Video #1 publish</label></div>
+          <div class="week"><span>WEEK 03</span><h3>Repeat</h3><label><input type="checkbox" data-task="upload2"> Video #2 publish</label><label><input type="checkbox" data-task="shorts"> ৪টি Shorts publish</label><label><input type="checkbox" data-task="analytics"> 48-hour analytics review</label></div>
+          <div class="week"><span>WEEK 04</span><h3>Refine</h3><label><input type="checkbox" data-task="upload34"> Video #3 ও #4</label><label><input type="checkbox" data-task="thumbtest"> Weak thumbnail replace</label><label><input type="checkbox" data-task="review"> Month review + next 30</label></div>
+        </div>
+        <div class="progress-wrap"><span>SPRINT PROGRESS</span><div class="progress-track"><i id="progressBar"></i></div><b id="progressText">0%</b></div>
+      </div>
+    </section>
+
+    <section class="section-shell policy-section content-section">
+      <div class="policy-head reveal"><span class="warning">!</span><div><span class="chapter">MONETIZATION GUARDRAILS</span><h2>ভয়ের চেয়ে trust দামি</h2></div></div>
+      <div class="policy-grid reveal">
+        <article><b>DO</b><h3>Original narrative</h3><p>নিজস্ব script, meaningful narration, substantive edit ও cohesive story দিন। AI realistic content হলে Studio-তে disclosure দিন।</p></article>
+        <article><b>AVOID</b><h3>Reused / mass-produced</h3><p>Reddit story verbatim পড়া, movie clips compilation, একই template-এ low-value batch upload monetization ঝুঁকি বাড়ায়।</p></article>
+        <article><b>AD-SAFE</b><h3>Atmosphere over gore</h3><p>Thumbnail/শুরুর অংশে blood, injury ও graphic violence নয়। Documentary context রাখুন; victims-কে exploit করবেন না।</p></article>
+      </div>
+      <div class="official-links reveal"><span>OFFICIAL SOURCES</span><a href="https://support.google.com/youtube/answer/72851" target="_blank" rel="noopener">YPP eligibility ↗</a><a href="https://support.google.com/youtube/answer/1311392" target="_blank" rel="noopener">Monetization policy ↗</a><a href="https://support.google.com/youtube/answer/6162278" target="_blank" rel="noopener">Ad-friendly guide ↗</a><a href="https://support.google.com/youtube/answer/14328491" target="_blank" rel="noopener">AI disclosure ↗</a></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">HORROR<span>FORGE</span></div><p>Built for Tasnim • Creator OS v1.0</p><p>শেষ policy review: 19 July 2026 • RPM estimates are not financial guarantees.</p>
+  </footer>
+  <div id="toast" role="status" aria-live="polite">Copied to clipboard</div>
+</body>
+</html>
